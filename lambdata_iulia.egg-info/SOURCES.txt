@@ -1,0 +1,6 @@
+README.md
+setup.py
+lambdata_iulia.egg-info/PKG-INFO
+lambdata_iulia.egg-info/SOURCES.txt
+lambdata_iulia.egg-info/dependency_links.txt
+lambdata_iulia.egg-info/top_level.txt
