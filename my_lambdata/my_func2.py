@@ -6,10 +6,13 @@ new_data = pd.DataFrame({'name': ['Aby', 'Carla', 'Bob', 'Sally'],
 
 
 print(new_data.head())
-
-def report_nan(X):
+## this function will print missin values in particular column and
+## will return rows which contain nans 
+def report_nan(X, col):
     X = X.copy()
-    col_with_nan = pd.isnull(X['car'])
+    col_with_nan = pd.isnull(X[col])
     
     return X[col_with_nan]
-print(report_nan(new_data))
+print(report_nan(new_data, 'car'))
+
+print(report_nan(new_data, 'year'))
